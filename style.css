@@ -1,0 +1,40 @@
+:root{
+  --accent:#4b7cff;
+  --muted:#666;
+}
+body{
+  font-family: Arial, sans-serif;
+  margin: 16px;
+  background: #fafafa;
+  color:#222;
+}
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:12px;
+}
+h1{ margin:0; font-size:1.4rem; color:var(--accent) }
+button{
+  padding:8px 12px;
+  border-radius:8px;
+  border:1px solid rgba(0,0,0,0.06);
+  cursor:pointer;
+  background:white;
+}
+#status{ margin-bottom:12px; color:var(--muted) }
+.users-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap:12px;
+}
+.card{
+  background:white;
+  border-radius:10px;
+  padding:12px;
+  box-shadow:0 1px 6px rgba(0,0,0,0.06);
+}
+.card h3{ margin:0 0 6px 0; font-size:1.05rem }
+.card p{ margin:4px 0; font-size:0.95rem; color:#444 }
+.small{ color:var(--muted); font-size:0.85rem }
+.error{ color:crimson; }
